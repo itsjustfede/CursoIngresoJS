@@ -1,18 +1,29 @@
 function Mostrar()
 {
+var max;
+var min;
+var respuesta = true;
+var num;
+var primera = true;
 
-	var contador=0;
-	// declarar variables
+while(respuesta == true){
+	num = prompt("Ingrese un número");
+	if (primera){
+		max = num;
+		min = num;
+		primera = false;
+		}
+		else{
+			if (num < min){
+			min = num;
+			}
+			if (num > max){
+			max = num;
+			}
+respuesta = confirm("¿Queres seguir agregando números?");
 	
-	var respuesta='si';
-
-	while(respuesta!='no')
-	{
-		
-	
-	}
-
-
-
-
-}//FIN DE LA FUNCIÓN
+}
+}
+document.getElementById('maximo').value=max;
+document.getElementById('minimo').value=min;
+}

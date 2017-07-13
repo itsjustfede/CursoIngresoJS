@@ -5,11 +5,11 @@ El jugador seleccionará una imagen correspondiente
 a su opción  y le informaremos si ganó, empató o perdió.
 */
 var eleccionMaquina;
-
+var num;
 function comenzar()
 {
-	
-
+num = Math.floor (Math.random () * (3 - 1)) + 1;
+console.log(num);
 
 }//FIN DE LA FUNCIÓN
 function piedra()

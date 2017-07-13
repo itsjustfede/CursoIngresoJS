@@ -15,6 +15,7 @@ var marca;
 var precio = 35;
 var descuento;
 var preciofinal;
+var impuesto;
 
 cantidad = document.getElementById("Cantidad").value;
 marca = document.getElementById("Marca").value;
@@ -23,6 +24,7 @@ cantidad = parseInt(cantidad);
 descuento = parseInt(descuento);
 precio = parseInt(precio);
 preciofinal = parseInt(preciofinal);
+impuesto = parseInt(impuesto);
 
 if (cantidad >= 6){
         descuento = (cantidad * precio) * 0.50;
@@ -57,12 +59,16 @@ else if (cantidad == 3 && marca != "FelipeLamparas" || cantidad == 3 && marca !=
         descuento = (cantidad * precio) * 0.05;
         preciofinal = (cantidad * precio) - descuento;
     }
-else if (cantidad > 3)
+else if (cantidad < 3){
         preciofinal = (cantidad * precio);
-
-if (preciofinal < 120){
-    
+        }
+if (preciofinal > 120){
+    impuesto = preciofinal * 0.10;
+    preciofinal += impuesto;
+    alert("IIBB usted pagó " + preciofinal + " siendo " + impuesto + " el impuesto que se pagó");
+    document.getElementById("precioDescuento"). value  = preciofinal; 
 }
-
-document.getElementById("precioDescuento").value = preciofinal;
+else{
+document.getElementById("precioDescuento"). value  = preciofinal;
 }
+} 

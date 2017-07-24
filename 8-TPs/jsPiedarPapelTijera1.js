@@ -14,13 +14,26 @@ console.log(num);
 }//FIN DE LA FUNCIÓN
 function piedra()
 {
-	
-
+if (num == 3) {
+    alert("Ganaste, era tijera");
+} else if (num == 1) {
+    alert("Empataste, era piedra");
+}	
+else {
+    alert("Perdiste, era papel")
+}
 }//FIN DE LA FUNCIÓN
 function papel()
 {
-
-
+{
+if (num == 3) {
+    alert("Ganaste, era tijera");
+} else if (num == 1) {
+    alert("Empataste, era piedra");
+}	
+else {
+    alert("Perdiste, era papel")
+}
 }//FIN DE LA FUNCIÓN
 function tijera()
 {

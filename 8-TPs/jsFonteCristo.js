@@ -32,7 +32,7 @@ if (numero < 1) {
     alert("ingrese un número impar");
 }
 else {
-    for (var i = 1; i < numero; i++) {
+    for (var i = 1; i <= numero; i++) {
         if (i % 2 == 1)
         contadorimpares++
     }

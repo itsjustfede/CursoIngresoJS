@@ -1,6 +1,6 @@
 function Mostrar()
 {
-var diashabiles = 5;
+var diashabiles = 24;
 var contadordias = 1;
 var importe;
 var max;
